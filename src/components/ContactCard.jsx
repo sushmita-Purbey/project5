@@ -12,8 +12,6 @@ const ContactCard = ( {contact} ) => {
 
   const {isOpen, onClose, onOpen} = useDisclosure();
 
-  
-
   const deleteContact = async(id) => {
     try {
       await deleteDoc(doc(db, "contacts",id));
